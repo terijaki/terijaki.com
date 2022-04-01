@@ -8,17 +8,14 @@ apple_touch_icon: '/img/apple-touch-icon.png'
 apple_touch_startup_image: '/img/apple-touch-icon.png'
 language: 'en'
 language_direction: 'ltr'
-theme_color: "#363b40"
-background_color: "#366273"
-include: ["_pages"]
+theme_color: "#1C2541"
+background_color: "#0B132B"
 permalink: /:title/
 url: https://terijaki.com
 author: "Björn Kohnen"
 
 # Jekyll GitHub Plugins
 plugins:
-  - jekyll-sitemap
-  - jekyll-feed
   - jekyll-seo-tag
 
 # Other
