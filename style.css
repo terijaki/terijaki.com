@@ -43,7 +43,8 @@ a, a:visited, a:active {
 }
 
 .timeline {
-    width: var(--linewidth);
+    width: 1px;
+    border: 1px solid var(--linecolor);
     background: var(--linecolor);
     height: 100vh;
     position: fixed;
