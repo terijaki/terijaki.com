@@ -14,24 +14,25 @@
 
 
 body {
-  font-family: 'Quicksand', sans-serif;
-  color: var(--cashmere);
-  background: var(--darkpearl);
+    font-family: 'Quicksand', sans-serif;
+    color: var(--cashmere);
+    background: var(--darkpearl);
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  place-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
 }
 
 .timeline {
-  width: var(--linewidth);
+    width: var(--linewidth);
     background: var(--linecolor);
     height: 100vh;
     position: fixed;
     top: 0;
     display: block;
+    z-index: -10;
 }
 
 .social {
