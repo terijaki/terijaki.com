@@ -78,7 +78,7 @@ a, a:visited, a:active {
     grid-gap: var(--gap-m);
     margin: var(--gap-m) 0;
 }
-.social {
+a.social {
     display: grid;
     place-content: center;
     place-items: center;
@@ -90,8 +90,9 @@ a, a:visited, a:active {
     border-style: solid;
     border-radius: 50%;
 }
-.social:hover {
+a.social:hover {
     border-color: var(--link);
+    color: var(--link);
     transition: 0.7s;
 }
 .social img {
