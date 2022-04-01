@@ -26,8 +26,8 @@ body {
 }
 
 .timeline {
-  width: 30px;
-    color: var(--riverbed);
+  width: var(--linewidth);
+    background: var(--riverbed);
     height: 100vh;
     position: fixed;
     top: 0;
