@@ -89,10 +89,11 @@ a:link, a:visited, a:active {
     border-radius: 50%;
 }
 a.social:link, a.social:visited, a.social:active {
-  color: var(--riverbed);
+  color: var(--linecolor);
 }
 a.social:hover {
     border-color: var(--link);
+    color: var(--link);
     transition: 0.7s;
 }
 .social img {
