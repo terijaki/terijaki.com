@@ -14,11 +14,9 @@ permalink: /:title/
 url: https://terijaki.com
 author: "Björn Kohnen"
 
-# Jekyll GitHub Plugins
 plugins:
   - jekyll-seo-tag
 
-# Other
 markdown: kramdown
 kramdown:
   input: GFM
@@ -28,7 +26,6 @@ kramdown:
     block:
       line_numbers: true
 
-# Exclude these files from your production _site
 exclude:
   - ".github/workflows*"
   - ".gitignore"
