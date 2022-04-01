@@ -47,9 +47,10 @@ a, a:visited, a:active {
     border: 1px solid var(--linecolor);
     background: var(--linecolor);
     height: 100vh;
+    display: block;
     position: fixed;
     top: 0;
-    display: block;
+    margin: 0 50vw;
     z-index: -10;
 }
 
