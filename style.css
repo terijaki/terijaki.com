@@ -35,6 +35,22 @@ body {
     z-index: -10;
 }
 
+.avatar {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    width: 128px;
+    height: 128px;
+    background: var(--ebonyclay);
+    border-color: var(--linecolor);
+    border-width: var(--linewidth);
+    border-style: solid;
+    border-radius: 50%;
+}
+.avatar img {
+    width: 96px;
+    height: 96px;
+}
 .social-row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -52,4 +68,8 @@ body {
     border-width: var(--linewidth);
     border-style: solid;
     border-radius: 50%;
+}
+.social img {
+    width: 32px;
+    height: 32px;
 }
