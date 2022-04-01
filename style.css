@@ -85,7 +85,7 @@ a:link, a:visited, a:active {
     border-radius: 50%;
 }
 a.social:link, a.social:visited, a.social:active {
-  color: var(--ebonyclay);
+  color: var(--riverbed);
 }
 a.social:hover {
     border-color: var(--link);
