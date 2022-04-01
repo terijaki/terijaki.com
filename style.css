@@ -26,7 +26,7 @@ body {
     padding 0;
 }
 
-a:link, a:visited, a:active {
+a, a:visited, a:active {
   color: var(--link);
 }
 
@@ -88,19 +88,15 @@ a:link, a:visited, a:active {
     border-style: solid;
     border-radius: 50%;
 }
-a.social:link, a.social:visited, a.social:active {
-  color: var(--linecolor);
-}
-a.social:hover {
+.social:hover {
     border-color: var(--link);
-    color: var(--link);
     transition: 0.7s;
 }
 .social img {
     width: 32px;
     height: 32px;
 }
-a.social:hover img {
-    transform: rotatey(360deg);
-    transition: 1s;
+.social:hover img {
+    -webkit-transform: rotatey(360deg);
+    -webkit-transition: 1s;
 }
