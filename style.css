@@ -10,10 +10,11 @@
   --cashmere:     #DDBEA8;
   --linewidth:    3px;
   --linecolor:    var(--riverbed);
-  --gap-s:         8px;
-  --gap-m:         16px;
-  --gap-l:         24px;
-  --gap-xl:        32px;
+  --gap-s:        8px;
+  --gap-m:        16px;
+  --gap-l:        24px;
+  --gap-xl:       32px;
+  --link:         var(--jellyfish):
 }
 
 
@@ -77,6 +78,10 @@ body {
     border-width: var(--linewidth);
     border-style: solid;
     border-radius: 50%;
+}
+a.social:hover {
+    border-color: var(--link);
+    transition: 0.7s;
 }
 .social img {
     width: 32px;
