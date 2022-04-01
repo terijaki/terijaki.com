@@ -27,9 +27,16 @@ body {
 
 .timeline {
   width: var(--linewidth);
-    background: var(--riverbed);
+    background: var(--linecolor);
     height: 100vh;
     position: fixed;
     top: 0;
     display: block;
+}
+
+.social {
+    width: 64px;
+    height: 64px;
+    border-color: var(--linecolor);
+    border-width: var(--linewidth);
 }
