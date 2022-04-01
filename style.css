@@ -65,13 +65,13 @@ a:link, a:visited, a:active {
     width: 96px;
     height: 96px;
 }
+
 .social-row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: var(--gap-m);
     margin: var(--gap-m) 0;
 }
-
 .social {
     display: grid;
     place-content: center;
@@ -94,4 +94,9 @@ a.social:hover {
 .social img {
     width: 32px;
     height: 32px;
+}
+a.social:hover img {
+    transform: rotatey(180deg);
+    filter: invert(50%) sepia(80%) saturate(2476%) hue-rotate(57deg) brightness(120%) contrast(120%);
+    transition: 1s transform, 0.5s linear 0.5s  filter;
 }
