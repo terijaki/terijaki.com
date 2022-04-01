@@ -3,9 +3,9 @@ short_name: "Terijaki"
 title: "Terijaki"
 description: "IndiDev"
 logo: '/img/logo.png'
-favicon: '/img/favicon.png'
-apple_touch_icon: '/img/apple-touch-icon.png'
-apple_touch_startup_image: '/img/apple-touch-icon.png'
+favicon: '/img/avatar.png'
+apple_touch_icon: '/img/avatar.png'
+apple_touch_startup_image: '/img/avatar.png'
 language: 'en'
 language_direction: 'ltr'
 theme_color: "#0B132B"
