@@ -26,6 +26,11 @@ body {
     padding 0;
 }
 
+a:link, a:visited, a:active {
+  color: var(--link);
+}
+
+
 .grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -78,6 +83,9 @@ body {
     border-width: var(--linewidth);
     border-style: solid;
     border-radius: 50%;
+}
+a.social:link, a.social:visited, a.social:active {
+  color: var(--ebonyclay);
 }
 a.social:hover {
     border-color: var(--link);
