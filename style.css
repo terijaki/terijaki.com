@@ -30,6 +30,10 @@ a:link, a:visited, a:active {
   color: var(--link);
 }
 
+::selection {
+  background: transparent;
+}
+
 
 .grid {
     display: grid;
@@ -97,6 +101,5 @@ a.social:hover {
 }
 a.social:hover img {
     transform: rotatey(360deg);
-    filter: brightness(0) saturate(100%) invert(50%) sepia(80%) saturate(2476%) hue-rotate(57deg) brightness(120%) contrast(120%); /* jellyfish */
-    transition: 1s transform, 0s linear 0.5s filter;
+    transition: 1s;
 }
