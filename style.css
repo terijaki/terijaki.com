@@ -96,7 +96,7 @@ a.social:hover {
     height: 32px;
 }
 a.social:hover img {
-    transform: rotatey(180deg);
-    filter: invert(50%) sepia(80%) saturate(2476%) hue-rotate(57deg) brightness(120%) contrast(120%);
-    transition: 1s transform, 0.5s linear 0.5s  filter;
+    transform: rotatey(360deg);
+    filter: brightness(0) saturate(100%) invert(50%) sepia(80%) saturate(2476%) hue-rotate(57deg) brightness(120%) contrast(120%); /* jellyfish */
+    transition: 1s transform, 0s linear 0.5s filter;
 }
