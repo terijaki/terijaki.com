@@ -10,6 +10,10 @@
   --cashmere:     #DDBEA8;
   --linewidth:    3px;
   --linecolor:    var(--riverbed);
+  --gap-s:         8px;
+  --gap-m:         16px;
+  --gap-l:         24px;
+  --gap-xl:        32px;
 }
 
 
@@ -46,6 +50,7 @@ body {
     border-width: var(--linewidth);
     border-style: solid;
     border-radius: 50%;
+    margin-top: var(--gap-xl);
 }
 .avatar img {
     width: 96px;
@@ -54,7 +59,8 @@ body {
 .social-row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 16px;
+    grid-gap: var(--gap-m);
+    margin: var(--gap-m) 0;
 }
 
 .social {
