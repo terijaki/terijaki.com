@@ -49,7 +49,6 @@ a, a:visited, a:active {
     position: fixed;
     top: 0;
     left: 50%:
-    left: calc(50% - ( var(--linewidth) / 2) )
     display: block;
     z-index: -10;
 }
