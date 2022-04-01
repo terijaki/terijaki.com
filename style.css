@@ -47,7 +47,7 @@ a, a:visited, a:active {
     border: 1px solid var(--linecolor);
     background: var(--linecolor);
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     display: block;
     z-index: -10;
