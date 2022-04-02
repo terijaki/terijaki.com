@@ -97,11 +97,9 @@
      transition: transform 0.7s;
 }
  .products {
-     display: grid;
-     grid-gap: var(--gap-xl);
-     grid-template-columns: 1fr var(--linewidth) 1fr;
-     margin: var(--gap-l);
-     max-width: 80vw;
+     display: flex;
+     flex-direction: column;
+     margin: var(--gap-l) var(--gap-xl);
 }
  .product {
      background: var(--ebonyclay);
@@ -111,6 +109,11 @@
      border-radius: var(--radius);
      margin: var(--gap-l) 0;
      padding: var(--gap-m) var(--gap-m);
+     width: 50%;
+     place-self: flex-end;
+}
+ .product:nth-child(even) {
+     place-self: flex-start;
 }
  .product h1 {
      padding: 0;
