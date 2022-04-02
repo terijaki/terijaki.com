@@ -48,14 +48,14 @@
   content: "";
   display: block;
   position: absolute;
-  height: 10vh;
+  height: 20vh;
   width: 100%;
   top: -50%;
   left: 0;
-  background: linear-gradient(to bottom, var(--jellyfish) 0%, var(--jellyfish) 75%, var(--jellyfish) 100%);
+  background: linear-gradient(to bottom, var(--riverbed) 0%, var(--jellyfish) 50%, var(--riverbed) 100%);
   animation: drop 14s 0s infinite;
   animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+  animation-timing-function: ease-in-out;
 }
 @keyframes drop {
   0% {
