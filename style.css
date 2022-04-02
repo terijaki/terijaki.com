@@ -122,14 +122,22 @@
      color: var(--snow);
      font-size: 1rem;
      text-align: justify;
+     margin: 0 0 var(--gap-xl) 0;
+}
+ .stores {
+   display: grid;
+   grid-template-columns: min-content;
+   place-items: center;
+   place-content: center;
 }
  .store {
-     display: grid;
-     grid-template-columns: 1fr;
-     place-items: center;
      margin: var(--gap-s);
 }
  .store img {
-     height: 64px;
+     height: 52px;
      border: 0;
+}
+.store .itch {
+  border: 1px solid grey;
+  border-radius: 6px;
 }
