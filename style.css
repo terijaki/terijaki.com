@@ -119,10 +119,11 @@
 }
 
 @media screen and (max-width: 768px) {
-  .product {
+  .product, .product:nth-child(even) {
     width: 100%;
     left:0;
     right: 0;
+    place-self: center;
   }
 }
  .product h1 {
