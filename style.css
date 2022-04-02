@@ -82,16 +82,15 @@
 }
  a.social:hover {
      border-color: var(--jellyfish);
-     color: var(--jellyfish);
      transition: border-color 0.7s;
 }
  .social img {
      width: 32px;
      height: 32px;
+     transform: 0.5s;
 }
  .social:hover img {
-     transform: rotatey(360deg);
-     transition: transform 0.7s;
+     transform: rotateZ(360deg);
 }
  .products {
      display: flex;
