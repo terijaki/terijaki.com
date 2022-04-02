@@ -104,7 +104,12 @@ a.social:hover {
     transform: rotatey(360deg);
     transition: transform 0.7s;
 }
-
+.products {
+    display: grid;
+    grid-gap: var(--gap-xl);
+    grid-template-columns: 1fr var(--linewidth) 1fr;
+    margin: var(--gap-l);
+}
 .product {
     background: var(--ebonyclay);
     border-color: var(--linecolor);
