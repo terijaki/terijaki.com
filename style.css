@@ -77,11 +77,12 @@
      width: 128px;
      height: 128px;
      background: var(--ebonyclay);
-     border-color: var(--linecolor);
+     border-color: transparent;
      border-width: var(--linewidth);
      border-style: var(--style);
      border-radius: 50%;
      margin-top: var(--gap-l);
+     box-sizing: border-box;
 }
 .avatar:before {
   content: "";
@@ -93,20 +94,17 @@
   z-index: -1;
   margin: -3px;
   border-radius: inherit;
-  background: conic-gradient(var(--linecolor),var(--linecolor));
-  animation: avatar-border 14s 0s infinite;
+  background: conic-gradient(var(--linecolor) 0%, var(--jellyfish) 50%), var(--linecolor) 100%);
+  animation: 10s avatar-border infinite;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
 @keyframes avatar-border {
   0% {
-    background: conic-gradient(var(--linecolor),var(--jellyfish))
-  }
-  50% {
-    background: conic-gradient(var(--jellyfish),var(--linecolor))
+    transform: rotateZ(0deg);
   }
   100% {
-    background: conic-gradient(var(--linecolor),var(--linecolor))
+    transform: rotateZ(-360deg);
   }
 }
  .avatar img {
@@ -193,6 +191,9 @@
      color: var(--snow);
      font-size: 1rem;
      text-align: justify;
+     background: linear-gradient(to bottom right, var(---almond), var(---cashmere));
+     background-clip: text;
+     text-fill-color: transparent;
 }
  .stores {
    display: grid;
