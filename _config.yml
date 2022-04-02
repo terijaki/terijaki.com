@@ -2,8 +2,8 @@ name: "Terijaki"
 short_name: "Terijaki"
 title: "Terijaki"
 description: "IndiDev"
-logo: '/img/logo.png'
-favicon: '/img/favicon.png'
+logo: '/img/avatar.png'
+favicon: '/img/avatar.png'
 apple_touch_icon: '/img/avatar.png'
 apple_touch_startup_image: '/img/avatar.png'
 language: 'en'
