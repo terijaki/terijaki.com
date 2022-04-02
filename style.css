@@ -10,6 +10,7 @@
   --cashmere:     #DDBEA8;
   --linewidth:    3px;
   --linecolor:    var(--riverbed);
+  --radius:       6px;
   --gap-s:        8px;
   --gap-m:        16px;
   --gap-l:        24px;
@@ -102,4 +103,13 @@ a.social:hover {
 .social:hover img {
     transform: rotatey(360deg);
     transition: transform 0.7s;
+}
+
+.product {
+    background: var(--ebonyclay);
+    border-color: var(--linecolor);
+    border-width: var(--linewidth);
+    border-style: solid;
+    border-radius: var(--radius);
+    margin: var(--gap-l) 0;
 }
