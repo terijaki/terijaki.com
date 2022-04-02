@@ -107,6 +107,7 @@
      margin: var(--gap-l) 0;
      padding: var(--gap-m) var(--gap-m);
      width: 60%;
+     max-width: 860px;
      place-self: flex-end;
      right: var(--gap-xl);
      left: 0;
