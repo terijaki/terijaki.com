@@ -27,7 +27,7 @@ kramdown:
       line_numbers: true
 
 exclude:
-  - ".github/workflows*"
+  - ".github/*"
   - ".gitignore"
   - Gemfile
   - Gemfile.lock
