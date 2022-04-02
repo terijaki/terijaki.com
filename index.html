@@ -41,9 +41,9 @@ kind: index
     <div class="product">
       <h1>{{ p.title }}</h1>
       {{ p.content }}
-      {% if p.google %}<a href="{{ p.google }}" class="store" target="_blank"><img src="img/google.png"></a>{% endif %}
+      {% if p.google %}<a href="{{ p.google }}" class="store" target="_blank"><img src="img/google.svg"></a>{% endif %}
       {% if p.apple %}<a href="{{ p.apple }}" class="store" target="_blank"><img src="img/apple.svg"></a>{% endif %}
-      {% if p.itch %}<a href="{{ p.itch }}" class="store" target="_blank"><img src="img/itch.png"></a>{% endif %}
+      {% if p.itch %}<a href="{{ p.itch }}" class="store" target="_blank"><img src="img/itch.svg"></a>{% endif %}
     </div>
   </div>
   {% endfor %}
