@@ -12,10 +12,12 @@
      --linecolor: var(--riverbed);
      --radius: 6px;
      --style: solid;
-     --gap-s: 8px;
-     --gap-m: 16px;
-     --gap-l: 24px;
-     --gap-xl: 32px;
+     --gap-xs: 8px;
+     --gap-s: 16px;
+     --gap-m: 24px;
+     --gap-l: 32px;
+     --gap-xl: 64px;
+     --gap-max: 128px;
      --link: var(--jellyfish):
 }
  body {
@@ -32,7 +34,7 @@
      display: grid;
      grid-template-columns: 1fr;
      place-items: center;
-     margin: var(--gap-xl) 0;
+     margin: var(--gap-l) 0;
 }
  .timeline {
      width: 3px;
@@ -79,7 +81,7 @@
      border-width: var(--linewidth);
      border-style: var(--style);
      border-radius: 50%;
-     margin-top: var(--gap-xl);
+     margin-top: var(--gap-l);
 }
  .avatar img {
      width: 120px;
@@ -88,8 +90,8 @@
  .social-row {
      display: grid;
      grid-template-columns: 1fr 1fr 1fr;
-     grid-gap: var(--gap-m);
-     margin: var(--gap-m) 0;
+     grid-gap: var(--gap-s);
+     margin: var(--gap-s) 0;
 }
  a.social {
      display: grid;
@@ -118,7 +120,13 @@
  .products {
      display: flex;
      flex-direction: column;
-     margin: var(--gap-l) var(--gap-xl);
+     margin: var(--gap-m) var(--gap-l);
+}
+@media screen and (max-width: 768px) {
+  .products {
+    width: 84%;
+    width: calc(100% - 128px);
+  }
 }
  .product {
      background: var(--ebonyclay);
@@ -126,20 +134,19 @@
      border-width: var(--linewidth);
      border-style: var(--style);
      border-radius: var(--radius);
-     margin: var(--gap-l) 0;
-     padding: var(--gap-m) var(--gap-m);
+     margin: var(--gap-m) 0;
+     padding: var(--gap-s) var(--gap-s);
      width: 60%;
      max-width: 860px;
      place-self: flex-end;
-     right: var(--gap-xl);
+     right: var(--gap-l);
      left: 0;
 }
  .product:nth-child(even) {
      place-self: flex-start;
      right: 0;
-     left: var(--gap-xl);
+     left: var(--gap-l);
 }
-
 @media screen and (max-width: 768px) {
   .product, .product:nth-child(even) {
     width: 100%;
@@ -156,7 +163,7 @@
 }
  .product p {
      padding: 0;
-     margin: 0 0 var(--gap-xl) 0;
+     margin: 0 0 var(--gap-l) 0;
      color: var(--snow);
      font-size: 1rem;
      text-align: justify;
@@ -168,7 +175,7 @@
    place-content: center;
 }
  .store {
-     margin: var(--gap-s);
+     margin: var(--gap-xs);
 }
  .store img {
      height: 52px;
@@ -181,7 +188,7 @@
 }
  .btn {
   display: inline-block;
-  padding: var(--gap-s);
+  padding: var(--gap-xs);
   margin: 0;
   color: white;
   font-size: 1rem;
