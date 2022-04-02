@@ -87,7 +87,7 @@
  .social img {
      width: 32px;
      height: 32px;
-     transform: 0.5s;
+     transition: 0.5s;
 }
  .social:hover img {
      transform: rotateZ(360deg);
