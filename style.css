@@ -87,17 +87,15 @@
 .avatar:before {
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   z-index: -1;
-  margin: -3px;
+  margin: -6px;
+  width: 134px;
+  height: 134px;
   border-radius: inherit;
-  background: conic-gradient(var(--linecolor) 0%, var(--jellyfish) 50%), var(--linecolor) 100%);
-  animation: 10s avatar-border infinite;
+  background: conic-gradient(var(--linecolor) 0deg, var(--jellyfish) 30deg, var(--linecolor) 60deg);
+  animation: 20s avatar-border infinite;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: linear;
 }
 @keyframes avatar-border {
   0% {
