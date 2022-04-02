@@ -40,10 +40,9 @@ kind: index
     {% for p in site.products %}
     <div class="product">
       <h1>{{ p.title }}</h1>
-      <span>{{ p.content }}</span>
+      {{ p.content }}
     </div>
   </div>
-
   {% endfor %}
 
 </body>
