@@ -1,4 +1,4 @@
 ---
-url: "https://discord.com/channels/@me/127336460016812032"
+adress: "https://discord.com/channels/@me/127336460016812032"
 img: "img/discord.svg"
 ---

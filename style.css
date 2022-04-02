@@ -126,7 +126,7 @@ a.social:hover {
   color: var(--cashmere);
   font-size: 2rem;
 }
-.product p, .product span {
+.product p {
   padding: 0;
   margin: 0;
   color: var(--snow);
