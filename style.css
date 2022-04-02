@@ -118,11 +118,10 @@
 }
  .product p {
      padding: 0;
-     margin: 0;
+     margin: 0 0 var(--gap-xl) 0;
      color: var(--snow);
      font-size: 1rem;
      text-align: justify;
-     margin: 0 0 var(--gap-xl) 0;
 }
  .stores {
    display: grid;
