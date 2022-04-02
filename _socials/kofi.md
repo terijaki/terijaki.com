@@ -1,4 +1,4 @@
 ---
-adress: "https://ko-fi.com/terijaki"
+address: "https://ko-fi.com/terijaki"
 img: "img/kofi.svg"
 ---
