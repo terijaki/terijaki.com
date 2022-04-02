@@ -41,6 +41,7 @@ kind: index
     <div class="product">
       <h1>{{ p.title }}</h1>
       {{ p.content }}
+      {% if p.address %}<p><a href="{{ p.address }}" class="address" target="_blank">{{ p.address | remove:'https://' | split:'/' | first }}</a></p>{% endif %}
       <div class="stores">
         {% if p.google %}<a href="{{ p.google }}" class="store google" target="_blank"><img src="img/google.svg"></a>{% endif %}
       {% if p.apple %}<a href="{{ p.apple }}" class="store apple" target="_blank"><img src="img/apple.svg"></a>{% endif %}
