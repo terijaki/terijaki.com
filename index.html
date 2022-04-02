@@ -4,49 +4,51 @@ kind: index
 
 <!DOCTYPE html>
 <html lang="{{ site.language }}">
-  <head>
-    <title>{{ site.title }}</title>
-    <meta charset="utf-8">
-    <meta name="language" content="en">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ site.description }}">
-    <meta name="keywords" content="gaming, software, video games">
-    <meta property="og:site_name" content="{{ site.title }}">
-    <meta name="theme-color" content="{{ site.theme_color }}">
-    <link href="{{ site.favicon }}" rel="icon">
-    <link href="{{ site.apple_touch_icon }}" rel="apple-touch-icon">
-    <link href="{{ site.apple_touch_startup_image }}" rel="apple-touch-startup-image">
-    <link href="/style.css" rel="stylesheet">
-  </head>
 
-  <body class="grid">
+<head>
+  <title>{{ site.title }}</title>
+  <meta charset="utf-8">
+  <meta name="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="keywords" content="gaming, software, video games">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta name="theme-color" content="{{ site.theme_color }}">
+  <link href="{{ site.favicon }}" rel="icon">
+  <link href="{{ site.apple_touch_icon }}" rel="apple-touch-icon">
+  <link href="{{ site.apple_touch_startup_image }}" rel="apple-touch-startup-image">
+  <link href="/style.css" rel="stylesheet">
+</head>
 
-    <div class="timeline"></div>
+<body class="grid">
 
-    <div class="avatar">
-      <img src="img/avatar.png">
+  <div class="timeline"></div>
+
+  <div class="avatar">
+    <img src="img/avatar.png">
+  </div>
+
+  <div class="social-row">
+    {% for s in site.socials %}
+    <a class="social" target="_blank" rel="sponsored nofollow noopener" href="{{ s.url }}">
+      <img src="{{ s.img }}">
+    </a>
+    {% endfor %}
+  </div>
+
+  <div class="products">
+    {% for p in site.products %}
+    <div class="product">
+      <h1>{{ p.title }}</h1>
+      <p>{{ p.content }}</p>
     </div>
+  </div>
 
-    <div class="social-row">
-<<<<<<< Updated upstream
-      <a class="social" target="_blank" rel="sponsored nofollow noopener" href="https://ko-fi.com/terijaki">
-        <img src="img/kofi.svg">
-      </a>
-      <a class="social" target="_blank" rel="sponsored nofollow noopener" href="https://discord.com/channels/@me/127336460016812032">
-        <img src="img/discord.svg">
-      </a>
-      <a class="social" target="_blank" rel="sponsored nofollow noopener" href="https://github.com/terijaki" >
-        <img src="img/github.svg">
-=======
-      {% for s in site.socials %}
-      <a class="social" target="_blank" rel="sponsored nofollow noopener" href="{{ s.url }}">
-        <img src="{{ s.img }}">
->>>>>>> Stashed changes
-      </a>
-      {% endfor %}
-    </div>
+  <a class="social" target="_blank" rel="sponsored nofollow noopener" href="{{ s.url }}">
+    <img src="{{ s.img }}">
+  </a>
+  {% endfor %}
 
-
-  </body>
+</body>
 
 </html>
