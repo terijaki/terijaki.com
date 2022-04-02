@@ -116,6 +116,14 @@
      right: 0;
      left: var(--gap-xl);
 }
+
+@media only screen and (max-width: 768px) {
+  .product {
+    width: 100%;
+    left:0;
+    right: 0;
+  }
+}
  .product h1 {
      padding: 0;
      margin: 0;
