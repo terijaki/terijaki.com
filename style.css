@@ -92,7 +92,7 @@
   width: 134px;
   height: 134px;
   border-radius: inherit;
-  background: conic-gradient(var(--linecolor) 0deg, var(--jellyfish) 30deg, var(--linecolor) 60deg);
+  background: conic-gradient(var(--linecolor) 90deg, var(--jellyfish) 120deg, var(--linecolor) 150deg);
   animation: 20s avatar-border infinite;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
