@@ -2,6 +2,7 @@
 
 /* variables */
 :root {
+  --snow:        #FFFFFF;
   --darkpearl:    #0B132B;
   --ebonyclay:    #1C2541;
   --riverbed:     #3A506B;
@@ -123,4 +124,11 @@ a.social:hover {
   padding: 0;
   margin: 0;
   color: var(--cashmere);
+  font-size: 2rem;
+}
+.product p {
+  padding: 0;
+  margin: 0;
+  color: var(--snow);
+  font-size: 1rem;
 }
