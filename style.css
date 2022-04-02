@@ -81,8 +81,8 @@
      border-radius: 50%;
 }
  a.social:hover {
-     border-color: var(--link);
-     color: var(--link);
+     border-color: var(--jellyfish);
+     color: var(--jellyfish);
      transition: border-color 0.7s;
 }
  .social img {
@@ -155,6 +155,7 @@
 .store.itch {
   border: 1px solid grey;
   border-radius: 6px;
+  background: black;
 }
  .btn {
   display: inline-block;
