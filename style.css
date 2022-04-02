@@ -11,6 +11,7 @@
      --linewidth: 3px;
      --linecolor: var(--riverbed);
      --radius: 6px;
+     --style: solid;
      --gap-s: 8px;
      --gap-m: 16px;
      --gap-l: 24px;
@@ -56,7 +57,7 @@
      background: var(--ebonyclay);
      border-color: var(--linecolor);
      border-width: var(--linewidth);
-     border-style: solid;
+     border-style: var(--style);
      border-radius: 50%;
      margin-top: var(--gap-xl);
 }
@@ -105,7 +106,7 @@
      background: var(--ebonyclay);
      border-color: var(--linecolor);
      border-width: var(--linewidth);
-     border-style: solid;
+     border-style: var(--style);
      border-radius: var(--radius);
      margin: var(--gap-l) 0;
      padding: var(--gap-m) var(--gap-m);
@@ -122,6 +123,19 @@
      color: var(--snow);
      font-size: 1rem;
      text-align: justify;
+}
+ .product a.address {
+     padding: var(--gap-s);
+     margin: 0;
+     color: var(--snow);
+     font-size: 1rem;
+     text-align: justify;
+     display: inline-block;
+     background: var(--ebonyclay);
+     border-color: var(--linecolor);
+     border-width: var(--linewidth);
+     border-style: var(--style);
+     border-radius: var(--radius);
 }
  .stores {
    display: grid;
