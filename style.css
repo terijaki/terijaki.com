@@ -2,7 +2,7 @@
 
 /* variables */
 :root {
-  --snow:        #FFFFFF;
+  --snow:         #FFFFFF;
   --darkpearl:    #0B132B;
   --ebonyclay:    #1C2541;
   --riverbed:     #3A506B;
@@ -131,4 +131,5 @@ a.social:hover {
   margin: 0;
   color: var(--snow);
   font-size: 1rem;
+  text-align: justify;
 }
