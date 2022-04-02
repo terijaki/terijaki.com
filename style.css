@@ -35,8 +35,7 @@
      margin: var(--gap-xl) 0;
 }
  .timeline {
-     width: 1px;
-     border: 1px solid var(--linecolor);
+     width: 3px;
      background: var(--linecolor);
      height: 100vh;
      display: block;
@@ -49,7 +48,7 @@
   content: "";
   display: block;
   position: absolute;
-  height: 20vh;
+  height: 10vh;
   width: 100%;
   top: -50%;
   left: 0;
