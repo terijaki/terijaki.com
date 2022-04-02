@@ -54,12 +54,9 @@
   top: -50%;
   left: 0;
   background: linear-gradient(to bottom, var(--jellyfish) 0%, var(--jellyfish) 75%, var(--jellyfish) 100%);
-  -webkit-animation: drop 14s 0s infinite;
-          animation: drop 14s 0s infinite;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-          animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+  animation: drop 14s 0s infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
 }
 @keyframes drop {
   0% {
