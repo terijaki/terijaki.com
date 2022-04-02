@@ -28,6 +28,7 @@ kind: index
     </div>
 
     <div class="social-row">
+<<<<<<< Updated upstream
       <a class="social" target="_blank" rel="sponsored nofollow noopener" href="https://ko-fi.com/terijaki">
         <img src="img/kofi.svg">
       </a>
@@ -36,7 +37,13 @@ kind: index
       </a>
       <a class="social" target="_blank" rel="sponsored nofollow noopener" href="https://github.com/terijaki" >
         <img src="img/github.svg">
+=======
+      {% for s in site.socials %}
+      <a class="social" target="_blank" rel="sponsored nofollow noopener" href="{{ s.url }}">
+        <img src="{{ s.img }}">
+>>>>>>> Stashed changes
       </a>
+      {% endfor %}
     </div>
 
 
