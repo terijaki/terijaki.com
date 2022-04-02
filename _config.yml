@@ -34,3 +34,7 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+collections:
+  - products
+  - socials
