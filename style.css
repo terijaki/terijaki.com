@@ -106,11 +106,15 @@
      border-radius: var(--radius);
      margin: var(--gap-l) 0;
      padding: var(--gap-m) var(--gap-m);
-     width: 50%;
+     width: 60%;
      place-self: flex-end;
+     right: var(--gap-xl);
+     left: 0;
 }
  .product:nth-child(even) {
      place-self: flex-start;
+     right: 0;
+     left: var(--gap-xl);
 }
  .product h1 {
      padding: 0;
