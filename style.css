@@ -101,6 +101,7 @@
      grid-gap: var(--gap-xl);
      grid-template-columns: 1fr var(--linewidth) 1fr;
      margin: var(--gap-l);
+     max-width: 80vw;
 }
  .product {
      background: var(--ebonyclay);
@@ -124,19 +125,6 @@
      font-size: 1rem;
      text-align: justify;
 }
- .product a.address {
-     padding: var(--gap-s);
-     margin: 0;
-     color: var(--snow);
-     font-size: 1rem;
-     text-align: justify;
-     display: inline-block;
-     background: var(--ebonyclay);
-     border-color: var(--linecolor);
-     border-width: var(--linewidth);
-     border-style: var(--style);
-     border-radius: var(--radius);
-}
  .stores {
    display: grid;
    grid-template-columns: min-content;
@@ -153,4 +141,17 @@
 .store .itch {
   border: 1px solid grey;
   border-radius: 6px;
+}
+ .btn {
+     padding: var(--gap-s);
+     margin: 0;
+     color: var(--snow);
+     font-size: 1rem;
+     text-align: justify;
+     display: inline-block;
+     background: var(--ebonyclay);
+     border-color: var(--linecolor);
+     border-width: var(--linewidth);
+     border-style: var(--style);
+     border-radius: var(--radius);
 }
