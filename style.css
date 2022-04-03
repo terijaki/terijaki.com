@@ -212,9 +212,6 @@
      margin: 0;
      color: var(--cashmere);
      font-size: 2rem;
-     background: -webkit-linear-gradient(to bottom right, var(--almond), var(--cashmere));
-     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
 }
  .product p {
      padding: 0;
