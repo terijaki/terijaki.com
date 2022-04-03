@@ -55,7 +55,10 @@
   top: -50%;
   left: 0;
   background: linear-gradient(to bottom, var(--riverbed) 0%, var(--jellyfish) 50%, var(--riverbed) 100%);
-  animation: timeline-drop 14s 0s infinite;
+  animation-name: timeline-drop;
+  animation-duration: 14s;
+  animation-delay: 0s;
+  animation-timing-function: infinite;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
@@ -77,13 +80,26 @@
      width: 128px;
      height: 128px;
      background: var(--ebonyclay);
-     border-color: transparent;
+     border-color: var(--linecolor);
      border-width: var(--linewidth);
      border-style: var(--style);
      border-radius: 50%;
      margin-top: var(--gap-l);
      box-sizing: border-box;
+     animation-name: avatar-loadin;
+     animation-duration: 14s;
+     animation-delay: 4s;
+     animation-fill-mode: forwards;
+     animation-timing-function: linear;
+     animation-iteration-count: 1;
 }
+@keyframes avatar-loadin {
+  0% {
+    border-color: var(--linecolor);
+  }
+  100% {
+    border-color: transparent;
+  }
 .avatar:before {
   content: "";
   position: absolute;
@@ -93,7 +109,10 @@
   height: 134px;
   border-radius: inherit;
   background: conic-gradient(var(--linecolor) 90deg, var(--jellyfish) 120deg, var(--linecolor) 150deg);
-  animation: 20s avatar-border infinite;
+  animation-name: avatar-border;
+  animation-duration: 20s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
