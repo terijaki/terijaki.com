@@ -79,7 +79,6 @@
      place-items: center;
      width: 128px;
      height: 128px;
-     background: var(--ebonyclay);
      border-color: var(--linecolor);
      border-width: var(--linewidth);
      border-style: var(--style);
