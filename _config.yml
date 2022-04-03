@@ -29,5 +29,6 @@ exclude:
   - CNAME
 
 collections:
-  - products
-  - socials
+  products:
+    sort_by: lesson
+  socials:
