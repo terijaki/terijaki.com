@@ -58,7 +58,7 @@
   animation-name: timeline-drop;
   animation-duration: 14s;
   animation-delay: 0s;
-  animation-timing-function: infinite;
+  animation-iteration-count: infinite;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
