@@ -3,58 +3,51 @@ layout: null
 ---
 
   {
-    "lang": "{{ site.language }}",
-    "dir": "{{ site.lang_direction }}",
-    "description": "{{ site.description }}",
-    "name": {
-      {
-        site.title | smartify | jsonify
-      }
+  "lang": "{{ site.language }}",
+  "dir": "{{ site.lang_direction }}",
+  "description": "{{ site.description }}",
+  "name": "{{ site.title | smartify | jsonify }}",
+  "short_name": "{{ site.short_name | smartify | jsonify }}",
+  "theme_color": "{{ site.theme_color }}",
+  "background_color": "{{ site.theme_color }}",
+  "start_url": "{{ site.url }}",
+  "display": "standalone",
+  "orientation": "natural",
+  "icons": [
+    {
+      "src": "\/icon\/16.png",
+      "sizes": "16x16",
+      "type": "image\/png",
+      "purpose": "any maskable"
     },
-    "short_name": {
-      {
-        site.short_name | smartify | jsonify
-      }
+    {
+      "src": "\/icon\/32.png",
+      "sizes": "32x32",
+      "type": "image\/png",
+      "purpose": "any maskable"
     },
-    "theme_color": "{{ site.theme_color }}",
-    "background_color": "{{ site.theme_color }}",
-    "start_url": "{{ site.url }}",
-    "display": "standalone",
-    "orientation": "natural",
-    "icons": [{
-        "src": "\/icon\/16.png",
-        "sizes": "16x16",
-        "type": "image\/png",
-        "purpose": "any maskable"
-      },
-      {
-        "src": "\/icon\/32.png",
-        "sizes": "32x32",
-        "type": "image\/png",
-        "purpose": "any maskable"
-      },
-      {
-        "src": "\/icon\/58.png",
-        "sizes": "58x58",
-        "type": "image\/png",
-        "purpose": "any maskable"
-      },
-      {
-        "src": "\/icon\/64.png",
-        "sizes": "64x64",
-        "type": "image\/png",
-        "purpose": "any maskable"
-      },
-      {
-        "src": "\/icon\/72.png",
-        "sizes": "72x72",
-        "type": "image\/png",
-        "purpose": "any maskable"
-      },
-      {
-        "src": "\/icon\/128.png",
-        "sizes": "128x128",
-        "type": "image\/png",
-        "purpose": "any maskable"
-      }
-    ],
+    {
+      "src": "\/icon\/58.png",
+      "sizes": "58x58",
+      "type": "image\/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "\/icon\/64.png",
+      "sizes": "64x64",
+      "type": "image\/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "\/icon\/72.png",
+      "sizes": "72x72",
+      "type": "image\/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "\/icon\/128.png",
+      "sizes": "128x128",
+      "type": "image\/png",
+      "purpose": "any maskable"
+    }
+  ],
