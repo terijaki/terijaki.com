@@ -1,56 +1,24 @@
 ---
-kind: index
+layout: default
 ---
+{% include timeline.html %}
+{% include avatar.html %}
+{% include socials.html %}
 
-<!DOCTYPE html>
-<html lang="{{ site.language }}">
-
-<head>
-  <title>{{ site.title }}</title>
-  <meta charset="utf-8">
-  <meta name="language" content="en">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="{{ site.description }}">
-  <meta name="keywords" content="gaming, software, video games">
-  <meta property="og:site_name" content="{{ site.title }}">
-  <meta name="theme-color" content="{{ site.theme_color }}">
-  <link href="{{ site.favicon }}" rel="icon">
-  <link href="{{ site.apple_touch_icon }}" rel="apple-touch-icon">
-  <link href="{{ site.apple_touch_startup_image }}" rel="apple-touch-startup-image">
-  <link href="/style.css" rel="stylesheet">
-</head>
-
-<body class="grid">
-
-  <div class="timeline"></div>
-
-  <div class="avatar">
-    <img src="img/avatar.png">
-  </div>
-
-  <div class="social-row">
-    {% for s in site.socials %}
-    <a class="social" target="_blank" rel="sponsored nofollow noopener" href="{{ s.address }}">
-      <img src="{{ s.img }}">
-    </a>
-    {% endfor %}
-  </div>
-
-  <div class="products">
-    {% for p in site.products %}
-    <div class="product">
-      <h1>{{ p.title }}</h1>
-      {{ p.content }}
-      <div class="stores">
-        {% if p.address %}<p><a href="{{ p.address }}" class="btn" target="_blank">{% if p.favicon %}<img src="{{ p.favicon }}">{% endif %}{{ p.address | remove:'https://' | split:'/' | first }}</a></p>{% endif %}
-        {% if p.google %}<a href="{{ p.google }}" class="store google" target="_blank"><img src="img/google.svg"></a>{% endif %}
-        {% if p.apple %}<a href="{{ p.apple }}" class="store apple" target="_blank"><img src="img/apple.svg"></a>{% endif %}
-        {% if p.itch %}<a href="{{ p.itch }}" class="store itch" target="_blank"><img src="img/itch.svg"></a>{% endif %}
-      </div>
+<div class="products">
+  {% for p in site.products %}
+  <div class="product">
+    <h1>{{ p.title }}</h1>
+    {{ p.content }}
+    <div class="stores">
+      {% if p.address %}<p><a href="{{ p.address }}" class="btn" target="_blank">{% if p.favicon %}<img
+            src="{{ p.favicon }}">{% endif %}{{ p.address | remove:'https://' | split:'/' | first }}</a></p>{% endif %}
+      {% if p.google %}<a href="{{ p.google }}" class="store google" target="_blank"><img src="img/google.svg"></a>{%
+      endif %}
+      {% if p.apple %}<a href="{{ p.apple }}" class="store apple" target="_blank"><img src="img/apple.svg"></a>{% endif
+      %}
+      {% if p.itch %}<a href="{{ p.itch }}" class="store itch" target="_blank"><img src="img/itch.svg"></a>{% endif %}
     </div>
-    {% endfor %}
   </div>
-
-</body>
-
-</html>
+  {% endfor %}
+</div>
