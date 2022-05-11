@@ -35,6 +35,8 @@ exclude:
   - README.md
   - CNAME
 
+include: ["_pages"]
+
 collections:
   products:
     sort_by: lesson
