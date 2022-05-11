@@ -35,7 +35,8 @@ exclude:
   - README.md
   - CNAME
 
-include: ["_pages"]
+include:
+- _pages
 
 collections:
   products:
