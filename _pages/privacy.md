@@ -1,5 +1,7 @@
 ---
 layout: page
+title: Privacy Policy
+permalink: /privacy/
 ---
 
 # Collection of Personal Information
