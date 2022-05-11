@@ -35,9 +35,6 @@ exclude:
   - README.md
   - CNAME
 
-include:
-  - manifest.json
-
 collections:
   products:
     sort_by: lesson
